@@ -3,13 +3,13 @@
  * @author Alexander Farlinger
  * @version 2022.02.08
  */
-public class Thing extends AbstractThing{
+public class Thing extends AbstractThing {
 
     /**
      * Constructs a Thing with a name.
      * @param name (Type: String)
      */
-    public Thing(String name) {
+    public Thing(final String name) {
         super(name);
     }
 
