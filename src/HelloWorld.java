@@ -13,5 +13,8 @@ public class HelloWorld {
      */
     public static void main(String[] args) {
         System.out.println("Hello World");
+
+        Thing thing = new Thing("Chris");
+        System.out.println(thing.getName());
     }
 }
