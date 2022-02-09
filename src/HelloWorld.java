@@ -2,19 +2,21 @@
 
 
 /**
+ * Drives the program and prints "Hello World".
  * @author Alexander
  * @version 2022.01.5
  */
 
-public class HelloWorld {
+public final class HelloWorld {
+    private HelloWorld() { }
     /**
-     * main method, drives program
+     * Drives the execution of the program.
      * @param args command line argument
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("Hello World");
 
         Thing thing = new Thing("Chris");
-        System.out.println(thing.getName());
+        System.out.println(thing);
     }
 }

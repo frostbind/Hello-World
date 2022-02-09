@@ -15,9 +15,25 @@ public class Thing extends AbstractThing {
 
     /**
      * Returns the name of the Thing.
-     * @return super.getName()
+     * @return String super.getName()
      */
     public String getName() {
         return super.getName();
+    }
+
+    /**
+     * Returns a description of the Thing.
+     * @return String string
+     */
+    @Override
+    public String toString() {
+        StringBuilder string = new StringBuilder();
+        string.append("Thing { ");
+
+        string.append("name: ");
+        string.append(getName());
+
+        string.append(" }");
+        return string.toString();
     }
 }
